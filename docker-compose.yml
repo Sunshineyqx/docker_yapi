@@ -10,7 +10,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=sunshine
       - MONGO_INITDB_ROOT_PASSWORD=yqx139527
     volumes:
-      - /root/tools/yapi/mongodb_data:/data/db
+      - /data/yapi/mongo_data:/data/db
     networks:
       - yapi_net
     # 增加启动参数，--auth，表示连接 mongodb 需要用户名和密码
